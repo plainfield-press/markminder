@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MarkMinder - Trademark watch for small brands</title>
+<meta name="description" content="MarkMinder watches new USPTO trademark filings for names close to your brand and flags them while opposing is still cheap. $15 per mark per month.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#fff;color:#111;line-height:1.6}
+.wrap{max-width:840px;margin:0 auto;padding:0 1.25rem}
+header{border-bottom:1px solid #111}
+header .wrap{display:flex;justify-content:space-between;align-items:baseline;padding:1.2rem 1.25rem;flex-wrap:wrap;gap:.4rem}
+.logo{font-size:1.4rem;font-weight:800;letter-spacing:-.02em}
+.logo sup{font-size:.7rem;font-weight:400}
+header .sub{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#666}
+.hero{padding:3.4rem 0 2.6rem;border-bottom:1px solid #eee}
+h1{font-size:2.5rem;font-weight:800;letter-spacing:-.03em;line-height:1.12;max-width:19ch}
+h1 .reg{font-size:1.2rem;vertical-align:super;color:#999}
+.hero p{margin-top:1.2rem;max-width:56ch;font-size:1.05rem;color:#444}
+h2{font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:#999;margin:2.8rem 0 1.2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+.step .n{font-size:2rem;font-weight:800;letter-spacing:-.02em}
+.step b{display:block;margin:.4rem 0 .3rem;font-size:.95rem}
+.step p{font-size:.92rem;color:#555}
+.sample{border:1px solid #111;padding:1.4rem;position:relative}
+.sample .reg{position:absolute;top:-1.6rem;right:-.8rem;font-size:4.5rem;font-weight:800;color:#f0f0f0;z-index:0}
+.sample .lbl{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#999;margin-bottom:.9rem;position:relative}
+.flag{border-top:1px solid #eee;padding:.8rem 0;position:relative}
+.flag:last-of-type{border-bottom:1px solid #eee}
+.flag b{text-transform:uppercase;font-size:.88rem;letter-spacing:.04em}
+.flag .meta{font-family:Consolas,monospace;font-size:.78rem;color:#777}
+.cta{margin:3rem 0 0;padding:2.4rem 0;border-top:1px solid #111;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.4rem}
+.price{font-size:2.4rem;font-weight:800;letter-spacing:-.03em}
+.price small{font-size:1rem;font-weight:400;color:#666}
+button.buy{background:#111;color:#fff;border:0;font-size:1rem;font-weight:700;padding:1rem 2.4rem;cursor:pointer;letter-spacing:.06em;text-transform:uppercase}
+button.buy:hover{background:#333}
+footer{padding:1.8rem 0 3rem;font-size:.8rem;color:#999}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);align-items:center;justify-content:center;padding:1rem}
+.modal.open{display:flex}
+.mcard{background:#fff;max-width:460px;padding:2.2rem;border:1px solid #111}
+.mcard h3{margin-bottom:.7rem;font-weight:800;letter-spacing:-.01em}
+.mcard p{margin-bottom:.9rem;font-size:.95rem}
+.mcard a.mail{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:.75rem 1.5rem;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em}
+.mcard .dismiss{display:block;margin-top:1rem;font-size:.85rem;color:#777;cursor:pointer;text-decoration:underline;background:none;border:0}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="logo">MarkMinder<sup>&reg;</sup></div>
+<div class="sub">USPTO filing watch</div>
+</div></header>
+
+<div class="wrap">
+<section class="hero">
+<h1>Someone filed a trademark that sounds like yours<span class="reg">&reg;</span> last week.</h1>
+<p>Opposing a confusingly similar filing costs a fraction of what fighting an issued registration costs - but only if you see it during the 30-day opposition window. MarkMinder reads the new USPTO filings every week and flags the ones close to your name, with the serial number and the deadline.</p>
+</section>
+
+<h2>How it works</h2>
+<div class="steps">
+<div class="step"><div class="n">01</div><b>Give us your mark</b>The name or logo wording you've built your brand on, registered or not.</div>
+<div class="step"><div class="n">02</div><b>We read the new filings</b>Every week's new USPTO applications, checked for matches in sound, spelling, and meaning - in your classes of goods.</div>
+<div class="step"><div class="n">03</div><b>You get the flag</b>The conflicting mark, who filed it, the serial number, and how many days remain to oppose. Then you call your attorney.</div>
+</div>
+
+<h2>What a flag looks like <span style="font-size:.7rem;letter-spacing:.14em">(ILLUSTRATIVE SAMPLE)</span></h2>
+<div class="sample"><div class="reg">&reg;</div>
+<div class="lbl">Sample flags - format preview, not real filings</div>
+<div class="flag"><b>Possible conflict - "NORTHWIND COFFEE CO."</b><br>Filed in your class (coffee, class 30). Sounds and reads close to your mark.<br><span class="meta">serial 99/000,000 - filed 4 days ago - opposition window open</span></div>
+<div class="flag"><b>Worth a look - "NORTH WIND ROASTERS"</b><br>Same goods, overlapping wording. Weaker match, flagged for your judgment.<br><span class="meta">serial 99/000,001 - filed 6 days ago - opposition window open</span></div>
+</div>
+
+<section class="cta">
+<div><div class="price">$15<small>/mark/month</small></div>
+<div>Weekly USPTO watch for one mark. Flags while the opposition window is still open. Cancel anytime.</div></div>
+<button class="buy" id="buyBtn">Watch my mark - $15/mo</button>
+</section>
+
+<footer>MarkMinder is a watch service, not a law firm. Flags are leads for you and your attorney; only the official USPTO record controls. MarkMinder is a Plainfield Press project.</footer>
+</div>
+
+<div class="modal" id="modal"><div class="mcard">
+<h3>We're not taking payment yet</h3>
+<p>MarkMinder is in its final pre-launch check. Purchases open soon - join the early-access list and you'll get a code for your first month when we open.</p>
+<p>Nothing is charged on this page.</p>
+<a class="mail" id="waitLink" href="mailto:mfcyxd@mail.instinct.com?subject=MarkMinder%20early%20access">Join the early-access list</a>
+<button class="dismiss" id="dismiss">Back to the page</button>
+</div></div>
+
+<script data-goatcounter="https://markminder.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+var m=document.getElementById('modal');
+document.getElementById('buyBtn').addEventListener('click',function(){
+  if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:'buy-intent',title:'Buy intent',event:true});}
+  m.classList.add('open');
+});
+document.getElementById('waitLink').addEventListener('click',function(){
+  if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:'waitlist-click',title:'Waitlist click',event:true});}
+});
+document.getElementById('dismiss').addEventListener('click',function(){m.classList.remove('open');});
+</script>
+</body>
+</html>
